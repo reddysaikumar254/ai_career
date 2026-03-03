@@ -61,7 +61,7 @@ function EmptyState({ selectedQuestion }: EmptyStateProps) {
               transition-all duration-200
               "
             >
-              <div className="flex items-start justify-between">
+              <div className="flex items-start justify-between pr-6">
                 <div className="flex items-start gap-3">
                   <ChatBubbleIcon className="mt-1 w-4 h-4 text-neutral-500 group-hover:text-neutral-700 dark:group-hover:text-neutral-300 transition-colors" />
                   <span className="text-sm text-neutral-700 dark:text-neutral-300">

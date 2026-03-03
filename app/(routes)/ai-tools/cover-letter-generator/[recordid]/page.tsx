@@ -133,7 +133,7 @@ function CoverLetterDetail() {
           {/* Back Button */}
           <div>
             <button
-              onClick={() => router.push("/dashboard")}
+              onClick={() => router.push("/ai-tools")}
               className="
               group
               inline-flex items-center gap-2
@@ -147,7 +147,7 @@ function CoverLetterDetail() {
             "
             >
               <ArrowLeftIcon className="w-4 h-4 transition-transform duration-200 group-hover:-translate-x-1" />
-              Back to Dashboard
+              Return to AI Tools
             </button>
           </div>
 

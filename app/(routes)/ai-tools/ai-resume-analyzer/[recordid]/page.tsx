@@ -58,7 +58,7 @@ function AiResumeAnalyzer() {
       {/* 🔙 Back Link (Same Style as Roadmap Page) */}
       <div className="max-w-7xl mx-auto px-8 pt-8 pb-2">
         <button
-          onClick={() => router.push("/dashboard")}
+          onClick={() => router.push("/ai-tools")}
           className="
       group
       inline-flex items-center gap-2
@@ -71,7 +71,7 @@ function AiResumeAnalyzer() {
     "
         >
           <ArrowLeftIcon className="w-4 h-4 transition-transform duration-200 group-hover:-translate-x-1" />
-          Back to Dashboard
+          Return to AI Tools
         </button>
       </div>
 

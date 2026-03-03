@@ -29,7 +29,7 @@ const ProfilePage = () => {
           </div>
 
           {/* Right Section - Sign Out */}
-          <SignOutButton redirectUrl="/">
+          {/* <SignOutButton redirectUrl="/">
             <button
               className="
                 flex items-center gap-2
@@ -44,7 +44,7 @@ const ProfilePage = () => {
               <LogOut className="w-4 h-4" />
               Sign Out
             </button>
-          </SignOutButton>
+          </SignOutButton> */}
 
         </div>
 

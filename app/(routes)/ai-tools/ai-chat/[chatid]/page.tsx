@@ -200,7 +200,7 @@ function AiChat() {
         </div>
 
         <div className="flex items-center gap-3">
-          <Button variant="outline" onClick={() => router.push("/dashboard")}>
+          <Button variant="outline" onClick={() => router.push("/ai-tools")}>
             <ArrowLeftIcon className="mr-2 h-4 w-4" />
             Back
           </Button>
@@ -213,7 +213,7 @@ function AiChat() {
       </div>
 
       {/* MESSAGES */}
-      <div className="flex-1 overflow-y-auto py-8 space-y-6">
+    <div className="flex-1 overflow-y-auto py-8 px-4 md:px-8 space-y-6">
 
         {messageList.length === 0 && (
           <EmptyState selectedQuestion={(q: string) => setUserInput(q)} />
@@ -309,7 +309,7 @@ function AiChat() {
           className="
       max-w-lg
       rounded-3xl
-overflow-hidden
+      overflow-hidden
       border border-neutral-800
       bg-neutral-900
       text-white
@@ -332,7 +332,7 @@ overflow-hidden
               Share this AI response with your network
             </p>
           </DialogHeader>
-
+        
           {/* Divider */}
           <div className="border-t border-neutral-800 mt-5" />
 
