@@ -53,7 +53,7 @@ A full-stack AI-powered career development platform built with Next.js that help
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/dasundu/AI_Career_Agent.git
+   git clone https://github.com/reddysaikumar254/ai_career.git
    cd AI_Career_Agent
    ```
 
@@ -210,14 +210,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Neon](https://neon.tech/) for serverless Postgres
 - [Google Gemini](https://ai.google.dev/) for AI capabilities
 
-## 📞 Support
-
-If you have any questions or need help, please:
-
-- Email: dasunathauda99@gmail.com
-
----
-
-**Perfect for:** Job seekers, career changers, and professionals looking for AI-powered career guidance, resume optimization, and personalized skill development roadmaps! 🚀
-
-Made with ❤️ by [Dasun Athauda](https://github.com/dasundu)
