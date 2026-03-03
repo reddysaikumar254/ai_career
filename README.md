@@ -3,7 +3,7 @@
 A full-stack AI-powered career development platform built with Next.js that helps professionals navigate their career journey with intelligent guidance and personalized recommendations. Forge your path to success!
 
 ## 🌟 Live Demo
-**[🎯 Try the live demo here →](https://ai-career-agent-seven.vercel.app/)**
+**[🎯 Try the live demo here →](https://ai-career-luiz.vercel.app/)**
 
 ## ✨ Features
 
