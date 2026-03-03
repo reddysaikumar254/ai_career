@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =============================== */
+/* Smooth Behavior */
+/* =============================== */
+
+* {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =============================== */
+/* Clean Professional Scrollbar */
+/* =============================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b1220; /* Deep navy */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b; /* Slate */
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155; /* Slightly lighter */
+}
+
+/* =============================== */
+/* Utility Enhancements */
+/* =============================== */
+
+@layer utilities {
+  .transition-smooth {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  .hover-lift {
+    @apply hover:shadow-md hover:-translate-y-1 transition-smooth;
+  }
+
+  .hover-soft {
+    @apply hover:bg-slate-800 transition-smooth;
+  }
+
+  .text-primary-clean {
+    @apply text-blue-500;
+  }
+
+  .button-solid {
+    @apply bg-blue-600 hover:bg-blue-700 text-white 
+           transition-smooth shadow-md;
+  }
+}
+
+/* =============================== */
+/* Theme Variables */
+/* =============================== */
+
+@layer base {
+  :root {
+    /* Core Light Mode */
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 215 20% 45%;
+
+    --accent: 220 14% 96%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.5rem;
+
+    /* Sidebar Light */
+    --sidebar-background: 210 40% 98%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 14% 96%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217 91% 60%;
+  }
+
+  .dark {
+    /* =============================== */
+    /* Core Dark Theme */
+    /* =============================== */
+
+    --background: 222 60% 4%;          /* Deep app background */
+    --foreground: 220 15% 85%;
+
+    --card: 222 50% 6%;
+    --card-foreground: 220 15% 85%;
+
+    --popover: 222 50% 6%;
+    --popover-foreground: 220 15% 85%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 222 40% 10%;
+    --secondary-foreground: 220 15% 85%;
+
+    --muted: 222 40% 10%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 222 40% 10%;
+    --accent-foreground: 220 15% 85%;
+
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 222 40% 14%;
+    --input: 222 40% 14%;
+    --ring: 217 91% 60%;
+
+    /* =============================== */
+    /* CLEAN NAVY SIDEBAR */
+    /* =============================== */
+
+    --sidebar-background: 222 65% 7%;    /* Deep navy */
+    --sidebar-foreground: 220 15% 85%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 222 50% 12%;       /* Hover background */
+    --sidebar-accent-foreground: 220 15% 95%;
+    --sidebar-border: 222 40% 14%;
+    --sidebar-ring: 217 91% 60%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
