@@ -166,7 +166,7 @@ The application leverages **Gemini API** for:
 2. **Configure environment variables** in Vercel dashboard
 3. **Deploy** with automatic builds on git push
 
-**Live Demo:** https://ai-career-agent-seven.vercel.app/
+**Live Demo:** https://ai-career-luiz.vercel.app/
 
 ```bash
 npm run build
