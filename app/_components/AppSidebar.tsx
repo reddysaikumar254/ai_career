@@ -7,6 +7,7 @@ import {
   SidebarHeader,
   SidebarMenu,
   SidebarMenuItem,
+  useSidebar,
 } from "@/components/ui/sidebar"
 import {
   Layers,
@@ -29,6 +30,8 @@ const items = [
 
 export function AppSidebar() {
   const path = usePathname()
+  const { setOpen } = useSidebar();
+
 
   return (
     <Sidebar
@@ -40,17 +43,22 @@ export function AppSidebar() {
     >
       {/* ================= HEADER ================= */}
       <SidebarHeader>
-        <div className="px-6 py-8 flex flex-col items-center border-b border-neutral-200 dark:border-neutral-800">
-           <Image
-              src="/mentorship.png"
-              alt="CareerForge Logo"
-              width={36}
-              height={36}
-              className="bg-white rounded-xl p-1 dark:invert"
-            />
+        <div
+          onClick={() => setOpen(false)}
+          className="px-6 py-8 flex flex-col items-center border-b border-neutral-200 dark:border-neutral-800 cursor-pointer"
+        >
+          <Image
+            src="/mentorship.png"
+            alt="CareerForge Logo"
+            width={36}
+            height={36}
+            className="bg-white rounded-xl p-1 dark:invert"
+          />
+
           <h2 className="mt-4 text-lg font-semibold text-neutral-900 dark:text-neutral-100">
             CareerForge
           </h2>
+
           <p className="text-xs text-neutral-500 dark:text-neutral-400 mt-1">
             AI Career Platform
           </p>
@@ -71,10 +79,9 @@ export function AppSidebar() {
                   className={`
                     flex items-center gap-3 px-4 py-3 rounded-xl
                     transition-all duration-200
-                    ${
-                      isActive
-                        ? "bg-neutral-900 text-white dark:bg-neutral-100 dark:text-black"
-                        : "text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800"
+                    ${isActive
+                      ? "bg-neutral-900 text-white dark:bg-neutral-100 dark:text-black"
+                      : "text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800"
                     }
                   `}
                 >
