@@ -41,8 +41,8 @@ const AiToolsList = () => {
 
       {/* ================= HEADER ================= */}
       <div className="flex items-start gap-4">
-        <div className="w-12 h-12 rounded-2xl bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center">
-          <RocketIcon className="w-6 h-6 text-neutral-700 dark:text-neutral-300" />
+        <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center transition-transform hover:scale-105">
+          <RocketIcon className="w-5 h-5 sm:w-6 sm:h-6 text-neutral-700 dark:text-neutral-300" />
         </div>
 
         <div>
