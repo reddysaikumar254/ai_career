@@ -40,21 +40,25 @@ const AiToolsList = () => {
     <section className="mt-16 space-y-12">
 
       {/* ================= HEADER ================= */}
-      <div className="flex items-start gap-4">
+      <div className="flex items-start gap-3 sm:gap-4">
+
         <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center transition-transform hover:scale-105">
           <RocketIcon className="w-5 h-5 sm:w-6 sm:h-6 text-neutral-700 dark:text-neutral-300" />
         </div>
 
-        <div>
-          <h2 className="text-3xl font-semibold text-neutral-900 dark:text-neutral-100">
+        <div className="space-y-1">
+
+          <h2 className="text-2xl sm:text-3xl font-semibold text-neutral-900 dark:text-neutral-100">
             Available AI Tools
           </h2>
 
-          <p className="text-neutral-600 dark:text-neutral-400 mt-2 max-w-2xl">
+          <p className="text-sm sm:text-base text-neutral-600 dark:text-neutral-400 max-w-2xl leading-relaxed">
             Explore AI-powered tools designed to accelerate your career growth,
             enhance your resume, and generate personalized career roadmaps.
           </p>
+
         </div>
+
       </div>
 
       {/* ================= GRID ================= */}
