@@ -34,7 +34,7 @@ const WelcomeBanner = () => {
             AI Career Assistant
           </div>
 
-          <Link href="/ai-tools">
+          {/* <Link href="/ai-tools">
             <Button
               className="
                 bg-neutral-900 text-white
@@ -45,7 +45,7 @@ const WelcomeBanner = () => {
             >
               Get Started
             </Button>
-          </Link>
+          </Link> */}
 
         </div>
 

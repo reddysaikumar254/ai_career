@@ -4,6 +4,7 @@ import { SidebarTrigger } from "@/components/ui/sidebar"
 import { useEffect, useState } from "react"
 import { useUser, UserButton } from "@clerk/nextjs"
 import Image from "next/image"
+import Link from "next/link"
 function AppHeader() {
   const { user } = useUser()
   const [isScrolled, setIsScrolled] = useState(false)
@@ -48,16 +49,21 @@ function AppHeader() {
 
           {/* Always show brand (better UX) */}
           <div className="flex items-center gap-2">
-             <Image
-              src="/mentorship.png"
-              alt="CareerForge Logo"
-              width={36}
-              height={36}
-              className="bg-white rounded-xl p-1 dark:invert"
-            />
-            <h2 className="text-base font-semibold text-neutral-900 dark:text-neutral-100">
-              CareerForge
-            </h2>
+            <Link href="/" className="flex items-center gap-2">
+
+              <Image
+                src="/mentorship.png"
+                alt="CareerForge Logo"
+                width={36}
+                height={36}
+                className="bg-white rounded-xl p-1 dark:invert"
+              />
+
+              <h2 className="text-base font-semibold text-neutral-900 dark:text-neutral-100">
+                CareerForge
+              </h2>
+
+            </Link>
           </div>
         </div>
 

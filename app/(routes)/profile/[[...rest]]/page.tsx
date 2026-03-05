@@ -1,59 +1,47 @@
 "use client"
 
 import React from "react"
-import { UserProfile, SignOutButton } from "@clerk/nextjs"
-import { LogOut, User } from "lucide-react"
+import { UserProfile } from "@clerk/nextjs"
+import { User } from "lucide-react"
 
 const ProfilePage = () => {
   return (
-    <div className="min-h-screen bg-neutral-50 dark:bg-neutral-950 px-8 py-16">
-      <div className="max-w-6xl mx-auto space-y-10">
+    <div className="min-h-screen bg-neutral-50 dark:bg-neutral-950 px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
+      
+      <div className="max-w-6xl mx-auto space-y-8 sm:space-y-10">
 
         {/* ================= HEADER ================= */}
-        <div className="flex items-start justify-between gap-6 flex-wrap">
+        <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-6">
 
           {/* Left Section */}
           <div className="flex items-center gap-4">
-            <div className="w-12 h-12 rounded-2xl bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center">
-              <User className="w-6 h-6 text-neutral-700 dark:text-neutral-300" />
+
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center">
+              <User className="w-5 h-5 sm:w-6 sm:h-6 text-neutral-700 dark:text-neutral-300" />
             </div>
 
             <div>
-              <h1 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100">
+              <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-neutral-900 dark:text-neutral-100">
                 Account Settings
               </h1>
-              <p className="text-neutral-600 dark:text-neutral-400">
+
+              <p className="text-sm sm:text-base text-neutral-600 dark:text-neutral-400">
                 Manage your profile, email, security, and preferences.
               </p>
             </div>
-          </div>
 
-          {/* Right Section - Sign Out */}
-          {/* <SignOutButton redirectUrl="/">
-            <button
-              className="
-                flex items-center gap-2
-                px-5 py-2.5 rounded-xl
-                bg-neutral-900 text-white
-                dark:bg-neutral-100 dark:text-black
-                font-medium
-                hover:scale-105
-                transition
-              "
-            >
-              <LogOut className="w-4 h-4" />
-              Sign Out
-            </button>
-          </SignOutButton> */}
+          </div>
 
         </div>
 
         {/* ================= PROFILE CARD ================= */}
         <div
           className="
-            bg-white dark:bg-neutral-900
-            border border-neutral-200 dark:border-neutral-800
-            rounded-2xl p-10 shadow-sm
+          bg-white dark:bg-neutral-900
+          border border-neutral-200 dark:border-neutral-800
+          rounded-2xl
+          p-4 sm:p-6 lg:p-10
+          shadow-sm
           "
         >
 

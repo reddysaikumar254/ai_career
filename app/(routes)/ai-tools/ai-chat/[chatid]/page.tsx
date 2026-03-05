@@ -24,7 +24,7 @@ import {
   TwitterLogoIcon,
   LinkedInLogoIcon
 } from "@radix-ui/react-icons"
-// import { Reddit } from "lucide-react"
+
 import {
   Dialog,
   DialogContent,
@@ -56,7 +56,6 @@ function AiChat() {
   const router = useRouter()
   const bottomRef = useRef<HTMLDivElement | null>(null)
 
-  /* FETCH HISTORY */
   useEffect(() => {
     if (chatid) fetchMessages()
   }, [chatid])

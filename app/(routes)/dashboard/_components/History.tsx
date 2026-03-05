@@ -117,10 +117,10 @@ const History = () => {
   }, [currentPage, totalPages]);
 
   return (
-    <div className="mt-6 p-8 rounded-2xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 shadow-sm">
+   <div className="mt-6 p-4 sm:p-6 lg:p-8 rounded-2xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 shadow-sm">
 
       {/* ================= HEADER ================= */}
-      <div className="mb-6 flex items-center justify-between flex-wrap gap-4">
+      <div className="mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-xl bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center">
             <ClockIcon className="w-5 h-5 text-neutral-600 dark:text-neutral-300" />
@@ -136,7 +136,7 @@ const History = () => {
         </div>
 
         {/* SEARCH */}
-        <div className="relative w-64">
+       <div className="relative w-full sm:w-64">
           <MagnifyingGlassIcon className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-neutral-400" />
           <Input
             placeholder="Search tool..."
@@ -169,7 +169,7 @@ const History = () => {
                 <Link
                   key={history.id}
                   href={`${history.aiAgentType}/${history.recordId}`}
-                  className="group flex justify-between items-center p-5 rounded-xl bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 hover:shadow-md transition-all"
+                  className="group flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 p-4 sm:p-5 rounded-xl bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 hover:shadow-md transition-all"
                 >
                   <div className="flex items-center gap-4 flex-1">
                     <Image
@@ -188,7 +188,7 @@ const History = () => {
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-neutral-900 text-white text-sm font-medium dark:bg-neutral-100 dark:text-black">
+                  <div className="flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg bg-neutral-900 text-white text-sm font-medium dark:bg-neutral-100 dark:text-black w-fit">
                     <EyeOpenIcon className="w-4 h-4" />
                     View
                   </div>
@@ -199,7 +199,7 @@ const History = () => {
 
           {/* ================= PAGINATION ================= */}
           {totalPages > 1 && (
-            <div className="flex justify-center items-center gap-3 mt-10 flex-wrap">
+            <div className="flex justify-center items-center gap-2 sm:gap-3 mt-8 sm:mt-10 flex-wrap">
 
               {/* Prev */}
               <button
